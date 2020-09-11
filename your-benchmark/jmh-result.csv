@@ -1,0 +1,12 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: ITERATIONS"
+"org.sample.MyBenchmark.testGrpcLargeFile","avgt",1,25,2377984.079090,205262.661478,"us/op",100
+"org.sample.MyBenchmark.testGrpcLargeFile","avgt",1,25,4624359.625167,293227.359495,"us/op",200
+"org.sample.MyBenchmark.testGrpcMedFile","avgt",1,25,255081.911230,87142.640981,"us/op",100
+"org.sample.MyBenchmark.testGrpcSmallFile","avgt",1,25,124777.246589,38680.365856,"us/op",100
+"org.sample.MyBenchmark.testGrpcSmallFile","avgt",1,25,245975.266914,98749.266498,"us/op",200
+"org.sample.MyBenchmark.testRestLargeFile","avgt",1,25,2019449.746769,117878.453011,"us/op",100
+"org.sample.MyBenchmark.testRestLargeFile","avgt",1,25,4522281.884153,936305.828011,"us/op",200
+"org.sample.MyBenchmark.testRestMediumFile","avgt",1,25,105422.933360,3370.674523,"us/op",100
+"org.sample.MyBenchmark.testRestMediumFile","avgt",1,25,211985.845916,12613.384133,"us/op",200
+"org.sample.MyBenchmark.testRestSmallFile","avgt",1,25,1951375.071419,26510.298534,"us/op",100
+"org.sample.MyBenchmark.testRestSmallFile","avgt",1,25,4177157.772653,144713.054014,"us/op",200

@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package rmit.lybao.grpc;
+
+option java_multiple_files = true;
+
+message ShortMess {
+    string message = 1;
+}
+
+message DataList {
+    repeated Data dataList = 1;
+}
+
+message Data {
+      string id = 1;
+      string guid = 2;
+      int32 index = 3;
+      bool isActive = 4;
+      string balance = 5;
+      int32 age = 6;
+      string eyeColor = 7;
+      string first_name = 8;
+      string last_name = 9;
+      string company = 10;
+}
+
+message EmptyRequest {
+}
+
+service PatientAptService {
+    // retrives patient profile by patient ID for appointment service
+    rpc GetShortMess (EmptyRequest) returns (ShortMess) {}
+    rpc GetMediumMess (EmptyRequest) returns (DataList) {}
+    rpc GetLargeMEss (EmptyRequest) returns (DataList) {}
+}
